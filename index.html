@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDec - Criptografia de Mensagens</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styleGeral.css">
+</head>
+<body>
+    <header>
+            <h1>EncoDeco<span id='subtitulo'><br>Criptografia de Mensagens</span></h1>
+    </header>
+    <main>
+        
+        <section id='aCriptografar'>
+            <div  id='textoOriginal'>
+                <textarea type='text' name="txtOriginal" id="txtOriginal" placeholder="Escreva aqui o texto a ser criptografado ou descriptografado."></textarea> <br>
+                <span><img src="img/cuidado.png"> Somente letras minúsculas e sem caracteres especiais!</span> 
+                <div  id='controlesCripto'>
+                    <button id='btnCripto'>Criptografar</button> <br>
+                    <button id='btnDescripto'>Descriptografar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id='descriptografar'>
+            <div name="txtCripto" id="txtCripto"></div>
+            <div id='controlesDescripto'>
+                <button id='btnCopyCripto'>Copiar</button>
+            </div>
+        </section>          
+    </main>
+    <footer>
+            <p>Site desenvolvido por Daniel Spósito Coelho <a href="https://github.com/danielspositocoelho" target='_blank'><img  class='social'src="img/github.png" alt="github-Icon"></a><a href="https://www.linkedin.com/in/daniel-sp%C3%B3sito-coelho-347a75204/" target='_blank'><img class='social' src="img/linkedIn.png" alt="linkedIn-Icon"></a></p>
+            <p>Primeiro Challenge do programa Oracle One, ofertado pela Oracle&trade; em parceria com a Alura&trade;</p>
+        
+    </footer>
+    <script src="js/logicaCodeDec.js"></script>
+</body>
+</html>

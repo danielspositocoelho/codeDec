@@ -1,0 +1,119 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:wght@300&family=Turret+Road:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+:root{
+    --fonteTitulo:'Turret Road', sans-serif;
+    --fonteBotao: 'Press Start 2P', cursive;
+    --fontePadrao:'Source Code Pro', monospace;
+}
+
+h1{
+    font: bold 2em var(--fonteTitulo);
+    Color:white;
+}
+
+#subtitulo{
+    font:  0.5em;
+}
+
+textarea{
+    border:none;
+    outline: none;
+    background: #ffffffe8;
+    border-radius: 8px;
+    width:75%;
+    min-height: 8em;
+    margin:30px;
+}
+    
+::-webkit-input-placeholder {
+    font:normal 1em var(--fontePadrao);
+    color: black;
+}
+
+button{
+    text-align: center;
+    font: normal 0.55em var(--fonteBotao);
+    border-radius: 20px;
+    padding: 15px;
+    margin:10px;
+    word-wrap: break-word;
+}
+
+button:hover{
+    box-shadow: 1px 1px 3px turquoise;
+}
+    
+body{
+    border:0px;
+    padding: 0px;
+    font: normal 1.3em var(--fontePadrao);
+    background-color: rgb(1, 1, 15);
+}
+
+header{
+    border: none;
+    text-align:center;
+    padding: 10px;
+    max-height: 200px;
+    min-height: 100px;
+}
+
+footer{
+    color: white;
+    font-size:  0.5em;
+    text-align: center;
+    padding: 15px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.336);
+    width: 80%;
+    padding: 10px;
+    text-align:center;
+}
+
+div#controlesCripto{
+    display: flex;
+    padding:5px;
+    justify-content: space-evenly;
+    min-width: min-content;
+}
+div#textoOriginal{
+    display: inline-block;
+    padding:5px;
+    min-width: 25em;
+    max-width:30em;
+}
+
+div#txtCripto{
+    font: normal 1.2em var(--fontePadrao);
+    color: white;
+    text-align:center;
+    background-color: rgba(205, 225, 255, 0.082);
+    margin: 10px auto;
+    border-radius: 30px;
+}
+
+span {
+    font: normal 0.6em var(--fontePadrao);
+    color: white;
+    max-width:30%;
+}
+
+.invalido{
+    border: ridge 2px rgb(201, 74, 74);
+    font: red;
+}
+
+.social{
+    width:20px;
+    height:20px;
+    margin:2px;
+}
