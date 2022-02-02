@@ -146,6 +146,10 @@ span {
     font: red;
 }
 
+.invisivel{
+    display: none;
+}
+
 .social{
     width:20px;
     height:20px;

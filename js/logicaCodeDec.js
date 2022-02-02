@@ -1,3 +1,7 @@
+/*TO DO
+
+*/ 
+
 function criptografar()
 { /*criamos uma cópia criptografada da mensagem, sem alterar a original utilizando método .replace*/
 
@@ -25,7 +29,9 @@ function descriptografar()
     if (textoCripto.charAt(textoCripto.length - 1) !== '\u200c')
     {
         txtArea_original.classList.add('invalido');
-        alert('Atenção, provavelmente esta mensagem não foi previamente criptografada usando EncoDec, portanto o resultado pode apresentar erros ou inconsistências.');
+        var aviso = document.querySelector('#aviso');
+        aviso.innerHTML += ' Atenção, provavelmente esta mensagem não foi previamente criptografada usando EncoDec, portanto o resultado pode apresentar erros ou inconsistências.'
+        aviso.classList.remove('invisivel');
     }  
     var textoDescripto = textoCripto.replace(/(enter|énter|ênter|ënter)/gi,'e')
                                             .replace(/(imes|ímes|îmes|ïmes)/gi,'i')
