@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeDec - Criptografia de Mensagens</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styleGeral.css">
 </head>
 <body>
@@ -17,21 +18,20 @@
     </header>
     <main>
         
-        <section id='aCriptografar'>
+        <section id='aCriptografar' class="container">
             <div  id='textoOriginal'>
-                <textarea type='text' name="txtOriginal" id="txtOriginal" placeholder="Escreva aqui o texto a ser criptografado ou descriptografado."></textarea> <br>
+                <textarea type='text' name="txtOriginal" id="txtOriginal" placeholder="Escreva aqui o texto a ser criptografado ou descriptografado." class="areaTexto"></textarea> <br>
                 <span><img src="img/cuidado.png"> Somente letras minúsculas e sem caracteres especiais!</span> 
-                <div  id='controlesCripto'>
-                    <button id='btnCripto'>Criptografar</button> <br>
-                    <button id='btnDescripto'>Descriptografar</button>
-                </div>
             </div>
+            <button id='btnCripto'>Criptografar</button>
         </section>
 
-        <section id='descriptografar'>
-            <div name="txtCripto" id="txtCripto"></div>
-            <div id='controlesDescripto'>
-                <button id='btnCopyCripto'>Copiar</button>
+        <section id='descriptografar' class="container">
+            <div name="txtCripto" id="txtCripto" class=".
+                areaTexto"></div>
+            <div class='controles'>
+                <button id='btnDescripto'>Descriptografar</button>
+                <button id='btnCopyCripto'>Copiar</button> 
             </div>
         </section>          
     </main>

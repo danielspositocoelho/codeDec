@@ -20,14 +20,13 @@ h1,h2{
     font:  0.5em;
 }
 
-textarea{
+.areaTexto{
     border:none;
     outline: none;
     background: #ffffffe8;
     border-radius: 8px;
-    min-width:40em;
-    min-height: 13em;
-    margin:30px;
+    width: 24rem;
+    height: 15rem;
 }
 
 main>p{
@@ -41,7 +40,9 @@ main>p{
 }
     
 ::-webkit-input-placeholder {
-    font:normal 1em var(--fontePadrao);
+    text-align: center;
+    padding: 1.5rem;
+    font:normal 1.5em var(--fontePadrao);
     color: black;
 }
 
@@ -99,46 +100,47 @@ nav>a:hover{
 }
 
 footer{
+    margin: 3rem 0 0.5em;
     color: white;
     font-size:  0.5em;
     text-align: center;
-    padding: 15px;
+    padding: 25px 25px 0;
 }
 main {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
     margin: 20px auto;
-    width: 80%;
-    padding: 10px;
-    text-align:center;
+    padding: 4rem 10rem;
+    text-align:flex-start;
 }
 
-div#controlesCripto{
+.container{
     display: flex;
-    padding:5px;
+    flex-flow:column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 25rem;
+    height:25rem;
+}
+.controles{
+    width:25em;
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
-    min-width: min-content;
+    align-items: center;
 }
-div#textoOriginal{
-    display: inline-block;
-    padding:5px;
-    min-width: 25em;
-    max-width:30em;
-}
+
 
 div#txtCripto{
     font: normal 1.2em var(--fontePadrao);
-    color: white;
     text-align:center;
-    background-color: rgba(205, 225, 255, 0.082);
-    margin: 10px auto;
-    border-radius: 30px;
 }
 
 span {
     font: normal 0.6em var(--fontePadrao);
     color: white;
-    max-width:30%;
 }
 
 .invalido{
@@ -150,4 +152,16 @@ span {
     width:20px;
     height:20px;
     margin:2px;
+}
+@media screen and (max-width:780px){
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px auto;
+        width: 80%;
+        padding: 10px;
+        text-align:center;
+    }
 }
