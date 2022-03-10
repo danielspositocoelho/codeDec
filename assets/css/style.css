@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:wght@300&family=Turret+Road:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+:root{
+    --fonteTitulo:'Turret Road', sans-serif;
+    --fonteBotao: 'Press Start 2P', cursive;
+    --fontePadrao:'Source Code Pro', monospace;
+}
+
+main>p{
+    border-radius: 8px;
+    color: #ffffffe8;
+    line-height:1.5em;
+    margin:10px;
+    min-width:40em;
+    text-align: justify;
+    text-indent: 2rem;
+}
+    
+::-webkit-input-placeholder {
+    color: black;
+    font:normal 1.5em var(--fontePadrao);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+button{
+    border-radius: 20px;
+    font: normal 0.55em var(--fonteBotao);
+    margin:10px;
+    padding: 15px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+button:hover{
+    box-shadow: 1px 1px 3px turquoise;
+}
+    
+body{
+    background-color: rgb(1, 1, 15);
+    border:0px;
+    font: normal 1.3em var(--fontePadrao);
+    padding: 0px;
+}
+
+footer{
+    color: white;
+    font-size:  0.55em;
+    margin: 3rem 0 0.5em;
+    padding: 25px 25px 0;
+    text-align: center;
+}
+
+div#txtCripto{
+    font: normal 1.2em var(--fontePadrao);
+    text-align:center;
+}
+
+.invalido{
+    border: ridge 2px rgb(201, 74, 74);
+    font: red;
+}
+
+.social{
+    height:20px;
+    margin:2px;
+    width:20px;
+}
+@media screen and (max-width:780px){
+    main {
+        align-items: center;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        margin: 10px auto;
+        padding: 10px;
+        text-align:center;
+        width: 80%;
+    }
+}

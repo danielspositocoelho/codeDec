@@ -1,0 +1,8 @@
+.container__texto{
+    background: #ffffffe8;
+    border:none;
+    border-radius: 8px;
+    height: 15rem;
+    outline: none;
+    width: 24rem;
+}

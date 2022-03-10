@@ -1,0 +1,8 @@
+.navbar{
+    box-shadow: 0px 2px 2px rgba(189, 245, 245, 0.445);
+    font-family: var(--fonteTitulo);
+    max-height:2em;
+    margin: 0px -10px;
+    padding:8px;
+    text-align: left;
+}

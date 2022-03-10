@@ -1,0 +1,9 @@
+.layout-principal {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 4rem 10rem;
+    text-align:flex-start;
+}

@@ -1,0 +1,7 @@
+.container__controles{
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width:25em;
+}

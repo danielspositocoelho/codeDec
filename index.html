@@ -5,41 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeDec - Criptografia de Mensagens</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styleGeral.css">
-</head>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cabecalho/cabecalhoPrincipal.css">
+    <link rel="stylesheet" href="assets/css/cabecalho/cabecalhoPrincipal__titulo.css">
+    <link rel="stylesheet" href="assets/css/cabecalho/navbar.css">
+    <link rel="stylesheet" href="assets/css/cabecalho/navbar__link.css">
+    <link rel="stylesheet" href="assets/css/layoutPrincipal/layout-principal.css">
+    <link rel="stylesheet" href="assets/css/layoutPrincipal/container.css">
+    <link rel="stylesheet" href="assets/css/layoutPrincipal/container__texto.css">
+    <link rel="stylesheet" href="assets/css/layoutPrincipal/container__controles.css">
 <body>
-    <header>
-            <h1>EncoDeco<span id='subtitulo'><br>Criptografia de Mensagens</span></h1>
-            <nav>
-                <a href="saiba-mais.html">Sobre o site</a>
+    <header class="cabecalho-principal">
+            <h1 class="cabecalhoPrincipal__titulo">EncoDeco<span class='cabecalhoPrincipal__subtitulo'><br>Criptografia de Mensagens</span></h1>
+            <nav class="navbar">
+                <a href="saiba-mais.html" class="navbar__link">Sobre o site</a>
             </nav>
     </header>
-    <main>
+    <main class="layout-principal">
         
         <section id='aCriptografar' class="container">
-            <div  id='textoOriginal'>
-                <textarea type='text' name="txtOriginal" id="txtOriginal" placeholder="Escreva aqui o texto a ser criptografado ou descriptografado." class="areaTexto"></textarea> <br>
-                <span><img src="img/cuidado.png"> Somente letras minúsculas e sem caracteres especiais!</span> 
+            <textarea type='text' name="txtOriginal" id="txtOriginal" placeholder="Escreva aqui o texto a ser criptografado ou descriptografado." class="container__texto"></textarea>
+            <div class="container__controles">
+                <button id='btnCripto'>Criptografar</button>
+                <button id='btnDescripto'>Descriptografar</button>
             </div>
-            <button id='btnCripto'>Criptografar</button>
         </section>
 
         <section id='descriptografar' class="container">
-            <div name="txtCripto" id="txtCripto" class=".
-                areaTexto"></div>
-            <div class='controles'>
-                <button id='btnDescripto'>Descriptografar</button>
+            <div name="txtCripto" id="txtCripto" class="container__texto"></div>
+            <div class='container__controles'>
                 <button id='btnCopyCripto'>Copiar</button> 
             </div>
-        </section>          
+        </section>     
+
     </main>
     <footer>
-            Site desenvolvido por Daniel Spósito Coelho <a href="https://github.com/danielspositocoelho" target='_blank'><img  class='social'src="img/github.png" alt="github-Icon"></a><a href="https://www.linkedin.com/in/daniel-sp%C3%B3sito-coelho-347a75204/" target='_blank'><img class='social' src="img/linkedIn.png" alt="linkedIn-Icon"></a> <br>
+            Site desenvolvido por Daniel Spósito Coelho <a href="https://github.com/danielspositocoelho" target='_blank'><img  class='social'src="assets/img/github.png" alt="github-Icon"></a><a href="https://www.linkedin.com/in/daniel-sp%C3%B3sito-coelho-347a75204/" target='_blank'><img class='social' src="assets/img/linkedIn.png" alt="linkedIn-Icon"></a> <br>
             Primeiro Challenge do programa Oracle One, ofertado pela Oracle&trade; em parceria com a Alura&trade; <br>
             2022
     </footer>
-    <script src="js/logicaCodeDec.js"></script>
-</body>
-</html>
+    <script src="assets/js/logicaCodeDec.js"></script>
+</bodcontainer__texto"

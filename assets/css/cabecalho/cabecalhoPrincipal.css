@@ -1,0 +1,7 @@
+.cabecalho-principal{
+    border: none;
+    max-height: 200px;
+    min-height: 100px;
+    padding: 10px;
+    text-align:center;
+}

@@ -1,0 +1,8 @@
+.cabecalhoPrincipal__titulo{
+    color:white;
+    font: bold 2.3em var(--fonteTitulo);
+}
+
+.cabecalhoPrincipal__subtitulo{
+    font-size:  0.6em;
+}
