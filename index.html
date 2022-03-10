@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="assets/css/layoutPrincipal/container.css">
     <link rel="stylesheet" href="assets/css/layoutPrincipal/container__texto.css">
     <link rel="stylesheet" href="assets/css/layoutPrincipal/container__controles.css">
+    <link rel="stylesheet" href="assets/css/rodape/rodapePrincipal.css">
+    <link rel="stylesheet" href="assets/css/rodape/rodapePrincipal__texto.css">
+    <link rel="stylesheet" href="assets/css/areaCriptografar/areaCriptografar__textoOriginal.css">
+    <link rel="stylesheet" href="assets/css/areaDescriptografar/areaDescriptografar__texto.css">
 <body>
     <header class="cabecalho-principal">
             <h1 class="cabecalhoPrincipal__titulo">EncoDeco<span class='cabecalhoPrincipal__subtitulo'><br>Criptografia de Mensagens</span></h1>
@@ -26,7 +30,7 @@
     <main class="layout-principal">
         
         <section id='aCriptografar' class="container">
-            <textarea type='text' name="txtOriginal" id="txtOriginal" placeholder="Escreva aqui o texto a ser criptografado ou descriptografado." class="container__texto"></textarea>
+            <textarea type='text' id="txtOriginal" placeholder="Escreva aqui o texto a ser criptografado ou descriptografado." class="container__texto textoOriginal"></textarea>
             <div class="container__controles">
                 <button id='btnCripto'>Criptografar</button>
                 <button id='btnDescripto'>Descriptografar</button>
@@ -41,10 +45,12 @@
         </section>     
 
     </main>
-    <footer>
-            Site desenvolvido por Daniel Spósito Coelho <a href="https://github.com/danielspositocoelho" target='_blank'><img  class='social'src="assets/img/github.png" alt="github-Icon"></a><a href="https://www.linkedin.com/in/daniel-sp%C3%B3sito-coelho-347a75204/" target='_blank'><img class='social' src="assets/img/linkedIn.png" alt="linkedIn-Icon"></a> <br>
-            Primeiro Challenge do programa Oracle One, ofertado pela Oracle&trade; em parceria com a Alura&trade; <br>
-            2022
+    <footer class="rodapePrincipal">
+            <div class="rodapePrincipal__texto">
+                Site desenvolvido por Daniel Spósito Coelho <a href="https://github.com/danielspositocoelho" target='_blank'><img  class='social'src="assets/img/github.png" alt="github-Icon"></a><a href="https://www.linkedin.com/in/daniel-sp%C3%B3sito-coelho-347a75204/" target='_blank'><img class='social' src="assets/img/linkedIn.png" alt="linkedIn-Icon"></a> <br>
+                Primeiro Challenge do programa Oracle One, ofertado pela Oracle&trade; em parceria com a Alura&trade; <br>
+                2022
+            </div>
     </footer>
     <script src="assets/js/logicaCodeDec.js"></script>
 </bodcontainer__texto"

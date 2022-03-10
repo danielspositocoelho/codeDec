@@ -1,0 +1,10 @@
+::-webkit-input-placeholder {
+    color: black;
+    font-family: var(--fontePadrao);
+    padding: 1.5rem;
+    text-align: center;
+}
+.textoOriginal{
+    font-size: 1.2em;
+    font-family: var(--fontePadrao);
+}
